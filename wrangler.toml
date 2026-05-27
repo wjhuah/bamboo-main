@@ -1,0 +1,6 @@
+name = "bamboo"
+account_id = "010a81d9821dae2218ae265b73b10724"
+compatibility_date = "2025-09-22"
+
+[pages]
+pages_build_output_dir = "dist"

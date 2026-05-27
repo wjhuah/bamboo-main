@@ -1,0 +1,202 @@
+/*
+  基于原有 Bear Blog 样式，新增：
+  - 标题：中文 → 文悦古典明朝体；英文 → Source Serif 4
+  - 正文：中文 → 思源宋体（繁体）；英文 → Source Serif 4
+*/
+
+:root {
+  --accent: #b32b2d; /* 新主题色：RGB(179, 43, 45) */
+  --accent-dark: #8f2224; /* 更深版本，用于 hover/阴影等 */
+  --black: 15, 18, 25;
+  --gray: 96, 115, 159;
+  --gray-light: 229, 233, 240;
+  --gray-dark: 34, 41, 57;
+  --gray-gradient: rgba(var(--gray-light), 50%), #fff;
+  --box-shadow:
+    0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
+    0 16px 32px rgba(var(--gray), 33%);
+}
+
+/* 1) Source Serif 4（拉丁/西文，变量字重 + 斜体） */
+@font-face {
+  font-family: "SourceSerif4";
+  src: url("/fonts/SourceSerif4-VariableFont_opsz,wght.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range:
+    U+0000-00FF,
+    U+0100-024F,
+    U+1E00-1EFF,
+    U+2000-206F,
+    U+20A0-20CF,
+    U+2100-214F;
+}
+@font-face {
+  font-family: "SourceSerif4";
+  src: url("/fonts/SourceSerif4-Italic-VariableFont_opsz,wght.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+  unicode-range:
+    U+0000-00FF,
+    U+0100-024F,
+    U+1E00-1EFF,
+    U+2000-206F,
+    U+20A0-20CF,
+    U+2100-214F;
+}
+
+/* 2) 定义文悦古典明朝体 */
+@font-face {
+  font-family: "WenYueMingChao";
+  src: url("/fonts/WenYue_GuDianMingChaoTi_JRFC.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range:
+    U+3000-303F,
+    U+3400-4DBF,
+    U+4E00-9FFF,
+    U+F900-FAFF,
+    U+20000-2A6DF,
+    U+2A700-2B73F,
+    U+2B740-2B81F,
+    U+2B820-2CEAF,
+    U+2CEB0-2EBEF,
+    U+FF00-FFEF;
+}
+
+/* 2.1) 让标题使用该字体并不加粗 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "WenYueMingChao", "SourceSerif4", serif;
+  font-weight: 400; /* 确保中文不加粗 */
+  margin: 0 0 0.5rem 0;
+  color: rgb(var(--black));
+  line-height: 1.2;
+}
+
+
+/* 3) 思源宋体（正文中的中文） */
+@font-face {
+  font-family: "SourceHanSerifTW";
+  src: url("/fonts/SourceHanSerifTW-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range:
+    U+3000-303F,
+    U+3400-4DBF,
+    U+4E00-9FFF,
+    U+F900-FAFF,
+    U+20000-2A6DF,
+    U+2A700-2B73F,
+    U+2B740-2B81F,
+    U+2B820-2CEAF,
+    U+2CEB0-2EBEF,
+    U+FF00-FFEF;
+}
+@font-face {
+  font-family: "SourceHanSerifTW";
+  src: url("/fonts/SourceHanSerifTW-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range:
+    U+3000-303F,
+    U+3400-4DBF,
+    U+4E00-9FFF,
+    U+F900-FAFF,
+    U+20000-2A6DF,
+    U+2A700-2B73F,
+    U+2B740-2B81F,
+    U+2B820-2CEAF,
+    U+2CEB0-2EBEF,
+    U+FF00-FFEF;
+}
+
+/* ---------------- 全局应用策略 ---------------- */
+
+html, body {
+  font-family: "SourceHanSerifTW", "SourceSerif4", serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background: linear-gradient(var(--gray-gradient)) no-repeat;
+  background-size: 100% 600px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: rgb(var(--gray-dark));
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+main {
+  width: 720px;
+  max-width: calc(100% - 2em);
+  margin: auto;
+  padding: 3em 1em;
+}
+
+/* 标题字体规则 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "WenYueMingChao", "SourceSerif4", serif;
+  margin: 0 0 0.5rem 0;
+  color: rgb(var(--black));
+  line-height: 1.2;
+}
+
+h1 { font-size: 3.052em; }
+h2 { font-size: 2.441em; }
+h3 { font-size: 1.953em; }
+h4 { font-size: 1.563em; }
+h5 { font-size: 1.25em; }
+
+strong, b { font-weight: 700; }
+a { color: var(--accent); }
+a:hover { color: var(--accent); }
+
+p { margin-bottom: 1em; }
+.prose p { margin-bottom: 2em; }
+
+textarea { width: 100%; font-size: 16px; }
+input { font-size: 16px; }
+
+table { width: 100%; }
+img { max-width: 100%; height: auto; border-radius: 8px; }
+
+code {
+  padding: 2px 5px;
+  background-color: rgb(var(--gray-light));
+  border-radius: 2px;
+}
+pre { padding: 1.5em; border-radius: 8px; }
+pre > code { all: unset; }
+
+blockquote {
+  border-left: 4px solid var(--accent);
+  padding: 0 0 0 20px;
+  margin: 0px;
+  font-size: 1.333em;
+}
+
+hr { border: none; border-top: 1px solid rgb(var(--gray-light)); }
+
+@media (max-width: 720px) {
+  body { font-size: 18px; }
+  main { padding: 1em; }
+}
+
+.sr-only {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

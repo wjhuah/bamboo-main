@@ -1,0 +1,31 @@
+---
+import BlogPost from '../../layouts/BlogPost.astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+
+// 统一生成 slug：优先 p.slug；否则用 id 去掉 .md/.mdx
+const entrySlug = (p: CollectionEntry<'blog'>) =>
+  (p.slug ?? p.id).replace(/\.(md|mdx)$/, '');
+
+export async function getStaticPaths() {
+  const posts = await getCollection('post');
+  return posts.map((post) => ({
+    params: { slug: entrySlug(post) },
+  }));
+}
+
+const { slug } = Astro.params;
+const posts = await getCollection('post');
+const post = posts.find((p) => entrySlug(p) === slug);
+
+if (!post) {
+  // 没找到就回列表页，避免白屏
+  return Astro.redirect('/post');
+}
+
+// 正确姿势：用 render(post) 获取 Content 组件
+const { Content } = await render(post);
+---
+
+<BlogPost {...post.data}>
+  <Content />
+</BlogPost>
