@@ -13,8 +13,8 @@ We are pleased to announce that the ninth session of the **Early Chinese Legal D
 - Online via Zoom: [Join here](https://harvard.zoom.us/j/8617565346)
 
 **Discussion Leader**  
-- Hwei Ru Ong (Harvard University)
 - Yifan Zheng (University of Washington)
+- Hwei Ru Ong (Harvard University)
 
 **Bibliographical Information**  
 - *“Wuyang Xiang Sefu Xiangren Lian Cong An”* 無陽鄉嗇夫襄人斂賨案. In *Changsha Zoumalou Xi Han jiandu* 長沙走馬樓西漢簡牘, ed. Changsha jiandu bowuguan 長沙簡牘博物館 and Hunan daxue jianbo wenxian yanjiu zhongxin 湖南大學簡帛文獻研究中心 (Changsha: Yuelu shushe, 2024), vol. 1, 44–52, 285–86.  
