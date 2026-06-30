@@ -9,7 +9,7 @@ author: "Jingrong Li"
 We are pleased to announce that the tenth session of the **Early Chinese Legal Documents Workshop** will focus on *Slips 15–25 in the “Statutes on Merit” from Zhangjiashan Han Tomb no. 247* 張家山三三六號漢墓竹簡《功令》簡15-25. All interested participants are invited to join.
 
 **Date & Time**  
-- July 3, 2026, 9 AM (U.S. Eastern Time)  
+- July 3, 2026, 8:30 AM (U.S. Eastern Time)  
 - Online via Zoom: [Join here](https://notredame.zoom.us/j/96946860277)
 
 **Discussion Leader**  
