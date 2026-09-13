@@ -1,5 +1,5 @@
 ---
-title: "Songbai/Songbo Han Ordinance"
+title: "Session 12 Songbai/Songbo Han Ordinance"
 description: "Details for the upcoming session of the Early Chinese Legal Documents Workshop."
 pubDate: 2026-09-18
 heroImage: "/jianbo.jpeg"

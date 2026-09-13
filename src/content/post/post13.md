@@ -1,5 +1,5 @@
 ---
-title: "Selections from Liye Qin Manuscripts 里耶"
+title: "Session 13 Selections from Liye Qin Manuscripts 里耶"
 description: "Details for the upcoming session of the Early Chinese Legal Documents Workshop."
 pubDate: 2026-11-20
 heroImage: "/jianbo.jpeg"
