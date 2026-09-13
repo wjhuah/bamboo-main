@@ -1,12 +1,6 @@
-/*
-  基于原有 Bear Blog 样式，新增：
-  - 标题：中文 → 文悦古典明朝体；英文 → Source Serif 4
-  - 正文：中文 → 思源宋体（繁体）；英文 → Source Serif 4
-*/
-
 :root {
-  --accent: #b32b2d; /* 新主题色：RGB(179, 43, 45) */
-  --accent-dark: #8f2224; /* 更深版本，用于 hover/阴影等 */
+  --accent: #b32b2d;
+  --accent-dark: #8f2224;
   --black: 15, 18, 25;
   --gray: 96, 115, 159;
   --gray-light: 229, 233, 240;
@@ -17,7 +11,6 @@
     0 16px 32px rgba(var(--gray), 33%);
 }
 
-/* 1) Source Serif 4（拉丁/西文，变量字重 + 斜体） */
 @font-face {
   font-family: "SourceSerif4";
   src: url("/fonts/SourceSerif4-VariableFont_opsz,wght.woff2") format("woff2");
@@ -47,7 +40,6 @@
     U+2100-214F;
 }
 
-/* 2) 定义文悦古典明朝体 */
 @font-face {
   font-family: "WenYueMingChao";
   src: url("/fonts/WenYue_GuDianMingChaoTi_JRFC.woff2") format("woff2");
@@ -67,7 +59,6 @@
     U+FF00-FFEF;
 }
 
-/* 2.1) 让标题使用该字体并不加粗 */
 h1, h2, h3, h4, h5, h6 {
   font-family: "WenYueMingChao", "SourceSerif4", serif;
   font-weight: 400; /* 确保中文不加粗 */
@@ -76,8 +67,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-
-/* 3) 思源宋体（正文中的中文） */
 @font-face {
   font-family: "SourceHanSerifTW";
   src: url("/fonts/SourceHanSerifTW-Regular.woff2") format("woff2");
@@ -115,7 +104,6 @@ h1, h2, h3, h4, h5, h6 {
     U+FF00-FFEF;
 }
 
-/* ---------------- 全局应用策略 ---------------- */
 
 html, body {
   font-family: "SourceHanSerifTW", "SourceSerif4", serif;
@@ -138,7 +126,6 @@ main {
   padding: 3em 1em;
 }
 
-/* 标题字体规则 */
 h1, h2, h3, h4, h5, h6 {
   font-family: "WenYueMingChao", "SourceSerif4", serif;
   margin: 0 0 0.5rem 0;
