@@ -6,7 +6,7 @@ heroImage: "/jianbo.jpeg"
 author: "Marcel Schneider"
 ---
 
-We are pleased to announce the thirteenth session of the **Early Chinese Legal Documents Workshop**, which will focus on selections from the Liye 里耶 Qin Manuscripts. All interested participants are invited to join.
+We are pleased to announce the thirteenth session of the **Early Chinese Legal Documents Workshop**, which will focus on the Liye 里耶 Qin Manuscripts. All interested participants are invited to join.
 
 **Dates**  
 - October 16, 2026 9:00 AM (U.S. Eastern Time)
@@ -28,4 +28,5 @@ We are pleased to announce the thirteenth session of the **Early Chinese Legal D
 - Schuessler, Axel, 2009, Minimal Old Chinese and Later Hàn Chinese: A Companion to Grammata Serica Recensa. Honolulu: University of Hawai'i Press.
  - Sūn, Wénbó 孫聞博, 2014, “Qín xiàn de liè cáo yǔ zhū guān 秦縣的列曹與諸官.” Jiǎnbó 簡帛. http://www.bsm.org.cn/show_article.php?id=2077.  
 - Sūn, Wénbó 孫聞博, 2018, “Bureaus and Offices in Qín County-Level Administration: In Light of an Excerpt from the Lost Hóngfàn wǔxíng zhuàn (Great Plan Five Phases Commentary).” Bamboo and Silk. Leiden: Brill, 71–120. 
-- Zhāng, Zhāoyáng 張朝陽, 2008, “A Note on Civil Cases in Early China.” Journal of the American Oriental Society. Ann Harbor: American Oriental Society. 5. Recommended reading Schneider, Marcel, 2024, The Imperial Qín Dynasty: Elements of Governance as Reflected in the Lǐyē 里耶 Manuscripts. Berlin: De Gruyter, 9–31, 155–185.
+- Zhāng, Zhāoyáng 張朝陽, 2008, “A Note on Civil Cases in Early China.” Journal of the American Oriental Society. Ann Harbor: American Oriental Society.
+- Schneider, Marcel, 2024, The Imperial Qín Dynasty: Elements of Governance as Reflected in the Lǐyē 里耶 Manuscripts. Berlin: De Gruyter, 9–31, 155–185.
